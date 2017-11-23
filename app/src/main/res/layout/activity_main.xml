@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/screenLayout"
+    tools:context="com.android.android_lab_3.MainActivity">
+
+    <Button
+        android:id="@+id/switchGreen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="@string/colorGreen"
+        android:textColorHint="@color/colorGreen"
+        android:textSize="20dp"/>
+
+    <Button
+        android:id="@+id/switchRed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="@string/colorRed"
+        android:textColorHint="@color/colorRed"
+        android:textSize="20dp"
+        app:layout_constraintTop_toBottomOf="@id/switchGreen"/>
+
+    <Button
+        android:id="@+id/switchBlue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="@string/colorBlue"
+        android:textColorHint="@color/colorBlue"
+        android:textSize="20dp"
+        app:layout_constraintTop_toBottomOf="@id/switchRed"/>
+
+    <Button
+        android:id="@+id/switchYellow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="@string/colorYellow"
+        android:textColorHint="@color/colorYellow"
+        android:textSize="20dp"
+        app:layout_constraintTop_toBottomOf="@id/switchBlue"/>
+
+    <Button
+        android:id="@+id/switchCat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="@string/cat"
+        android:textColorHint="@color/colorPrimaryDark"
+        android:textSize="20dp"
+        app:layout_constraintTop_toBottomOf="@id/switchYellow"/>
+
+    <Button
+        android:id="@+id/switchDev"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="@string/developer"
+        android:textColorHint="@color/colorPrimary"
+        android:textSize="20dp"
+        app:layout_constraintTop_toBottomOf="@id/switchCat"/>
+</android.support.constraint.ConstraintLayout>
